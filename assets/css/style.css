@@ -1290,3 +1290,143 @@ p {
 .product-overview-grid .about-highlights {
   grid-template-columns: 1fr;
 }
+
+/* ==========================================
+   PRODUCT GALLERY
+========================================== */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: contain;
+
+  background: var(--black-card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-5px);
+}
+
+.contact-benefits {
+  margin-top: 20px;
+}
+
+.contact-benefits li {
+  margin-bottom: 15px;
+
+  color: var(--gray);
+
+  font-size: 17px;
+}
+
+/* ==========================================
+   TECHNICIAN SECTION
+========================================== */
+
+.technician-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+  max-width: 1100px;
+
+  margin: auto;
+}
+
+.technician-card {
+  padding: 40px;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.technician-image {
+  width: 180px;
+
+  height: 180px;
+
+  margin: auto;
+
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  border: 4px solid var(--gold);
+
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.technician-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.technician-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 28px;
+}
+
+.technician-degree {
+  display: block;
+
+  color: var(--gold);
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.experience-badge {
+  display: inline-block;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  color: var(--gold);
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.technician-card p {
+  margin-bottom: 25px;
+
+  min-height: 90px;
+}
+
+.technician-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.08);
+}

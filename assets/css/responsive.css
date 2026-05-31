@@ -303,3 +303,39 @@
     justify-content: center;
   }
 }
+
+.gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   TECHNICIAN RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .technician-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .technician-image {
+    width: 140px;
+
+    height: 140px;
+  }
+
+  .technician-card {
+    padding: 30px 20px;
+  }
+
+  .technician-card h3 {
+    font-size: 24px;
+  }
+}
