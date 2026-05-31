@@ -101,6 +101,7 @@
 
   .logo {
     justify-content: center;
+    height: 80px;
   }
 
   .nav-menu {
@@ -337,5 +338,76 @@
 
   .technician-card h3 {
     font-size: 24px;
+  }
+}
+
+/* ==========================================
+   HAMBURGER MENU
+========================================== */
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--white);
+    font-size: 24px;
+    margin-left: auto;
+    padding: 8px;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0 6px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-menu.active {
+    display: flex;
+    background: rgba(2, 2, 2, 0.9);
+    /* backdrop-filter: blur(16px); */
+    /* -webkit-backdrop-filter: blur(16px); */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar > .btn.btn-orange {
+    display: none;
+  }
+
+  .nav-menu.active + .btn.btn-orange {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    border-top: 1px solid var(--border);
+    /* border-radius: 0; */
+    /* background: rgba(11, 11, 11, 0.9); */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    justify-content: center;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
   }
 }
