@@ -282,12 +282,24 @@
     flex-direction: column;
     gap: 30px;
   }
-}
 
-.about-grid {
-  grid-template-columns: 1fr;
-}
+  .product-row {
+    grid-template-columns: 1fr;
+  }
 
-.about-highlights {
-  grid-template-columns: 1fr;
+  .product-row-content {
+    text-align: center;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .product-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-overview-grid .about-highlights div {
+    justify-content: center;
+  }
 }

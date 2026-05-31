@@ -243,6 +243,8 @@ p {
 
 .logo img {
   width: 90px;
+  border-radius: 8px;
+  border: 3px solid var(--gold);
 }
 
 .logo-text h2 {
@@ -967,7 +969,8 @@ p {
 .about-grid {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr;
 
   gap: 60px;
 
@@ -995,7 +998,7 @@ p {
 
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   gap: 15px;
 }
@@ -1154,4 +1157,136 @@ p {
 
 .footer a.developer-link:hover {
   text-decoration: underline;
+}
+
+/* ==========================================
+   PRODUCT BANNER
+========================================== */
+
+.product-banner {
+  min-height: 400px;
+
+  display: flex;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 800px;
+
+  margin: auto;
+}
+
+.breadcrumb {
+  margin-top: 25px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.breadcrumb a {
+  color: var(--gold);
+}
+
+/* ==========================================
+   PRODUCT PAGE
+========================================== */
+
+.product-row {
+  display: grid;
+
+  grid-template-columns: 450px 1fr;
+
+  gap: 40px;
+
+  padding: 35px;
+
+  margin-bottom: 40px;
+}
+
+.product-row-image {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.product-row-image img {
+  width: 100%;
+
+  max-width: 350px;
+}
+
+.product-row-content h3 {
+  margin-bottom: 20px;
+
+  font-size: 34px;
+}
+
+.product-row-content ul {
+  margin: 25px 0;
+}
+
+.product-row-content ul li {
+  margin-bottom: 12px;
+
+  color: var(--gray);
+}
+
+/* ==========================================
+   SPECIFICATION TABLE
+========================================== */
+
+.spec-table-wrapper {
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.spec-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 18px 20px;
+
+  border: 1px solid var(--border);
+}
+
+.spec-table th {
+  background: var(--black-card);
+
+  color: var(--gold);
+
+  text-align: left;
+
+  width: 35%;
+}
+
+.spec-table td {
+  color: var(--gray);
+}
+
+.product-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.product-overview-grid .about-highlights {
+  grid-template-columns: 1fr;
 }
