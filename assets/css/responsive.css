@@ -267,6 +267,21 @@
   .service-area-grid {
     grid-template-columns: 1fr;
   }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer h3,
+  .footer h4,
+  .footer ul li {
+    text-align: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .about-grid {
